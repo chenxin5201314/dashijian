@@ -2,41 +2,41 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100%;
-    background: url(../images/login_bg.jpg) no-repeat center;
+    width: 100%;
+    background: url(../images/login_bg.jpg) no-repeat;
     background-size: cover;
 }
 
-.login_box {
+.loginAndRegBox {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
     width: 400px;
     height: 310px;
     background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.login_title {
+.title-box {
     height: 60px;
     background: url(../images/login_title.png) no-repeat center;
 }
 
-.login_zhuce {
+.reg-box {
     display: none;
 }
 
-.layui-form-item {
+.layui-form {
     padding: 0 30px;
 }
 
-.aoligei {
+.links {
     display: flex;
     justify-content: flex-end;
 }
 
-.aoligei a {
+.links a {
     font-size: 12px;
 }
 
@@ -47,7 +47,7 @@ body {
 .layui-icon {
     position: absolute;
     top: 10px;
-    left: 40px;
+    left: 10px;
 }
 
 .layui-input {
